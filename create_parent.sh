@@ -52,6 +52,8 @@ EXIT VALUE
 EXAMPLE
     $ $0 myproject-parent
 
+    $ $0 parent project -g -i -v
+
 MORE
     See the maven documentation on naming conventions for packages:
         https://maven.apache.org/guides/mini/guide-naming-conventions.html
