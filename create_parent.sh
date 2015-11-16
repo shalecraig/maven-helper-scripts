@@ -6,7 +6,7 @@ set -o pipefail
 simpleusage="$0 artifactId [directory [-c]] [-g] [-i] [-v]"
 
 usage() {
-    cat <<EOF
+    $PAGER <<EOF
 NAME
     $0 - Create a parent pom in the given directory.
 
