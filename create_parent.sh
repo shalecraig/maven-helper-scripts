@@ -150,6 +150,14 @@ if [ "$github_gitignore" = true ] ; then
         'https://raw.githubusercontent.com/github/gitignore/master/Java.gitignore' \
         >> .gitignore
 
+    echo "\n\n# Gitignore from Github's Jetbrains gitignore:" >> .gitignore
+    echo '# https://raw.githubusercontent.com/github/gitignore/master/Global/JetBrains.gitignore' \
+        >> .gitignore
+    curl \
+        --silent \
+        'https://raw.githubusercontent.com/github/gitignore/master/Global/JetBrains.gitignore' \
+        >> .gitignore
+
     echo -n "popd " > $logfile
     popd > $logfile
 fi
